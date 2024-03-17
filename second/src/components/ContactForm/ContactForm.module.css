@@ -2,6 +2,8 @@
     display:flex;
     max-width:1000px;
     margin:0 auto;
+    margin-top: 40px;
+    align-items: end;
 }
 
 .top_btn{
@@ -14,6 +16,12 @@
     flex-direction: column;
     gap: 24px;
 }
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+} 
 .form_control{
     display: flex;
     flex-direction: column;
