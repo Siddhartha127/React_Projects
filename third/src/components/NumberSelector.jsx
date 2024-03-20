@@ -3,7 +3,7 @@ import styled from "styled-components";
 function NumberSelector({setError,error, selectedNumber,setSelectedNumber}) {
   const arr = [1, 2, 3, 4, 5, 6];
   
-    const numberSelectorHandeler=()=>{
+    const numberSelectorHandeler=(value)=>{
       setSelectedNumber(value);
       setError("")
     }
@@ -16,7 +16,7 @@ function NumberSelector({setError,error, selectedNumber,setSelectedNumber}) {
         <Box
             isselected={value===selectedNumber}
           key={i}
-          onClick={numberSelectorHandeler}
+          onClick={()=>numberSelectorHandeler(value)}
         >
           {value}
         </Box>
